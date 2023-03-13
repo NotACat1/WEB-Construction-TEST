@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000000">
+        
+        <title>Home BINDER</title>
+
+        <!--Classic-desktop-browsers-->
+        <link type="image/x-icon" rel="shortcut icon" href="img/favicons/Classic-desktop-browsers/Favicon-16x16.ico">
+        <link type="image/png" sizes="16x16" rel="icon" href="img/favicons/Classic-desktop-browsers/Favicon-16x16.png">
+        <link type="image/png" sizes="32x32" rel="icon" href="img/favicons/Classic-desktop-browsers/Favicon-32x32.png">
+        <link type="image/png" sizes="96x96" rel="icon" href="img/favicons/Classic-desktop-browsers/Favicon-96x96.png">
+        <link type="image/png" sizes="120x120" rel="icon" href="img/favicons/Classic-desktop-browsers/Favicon-120x120.png">
+        <!--Google-Android-and-Chrome-->
+        <link type="image/png" sizes="192x192" rel="icon" href="img/favicons/Google-Android-and-Chrome/Favicon-192x192.png">
+        <!--Apple-iOS-->
+        <link sizes="57x57" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-57x57.png">
+        <link sizes="60x60" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-60x60.png">
+        <link sizes="72x72" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-72x72.png">
+        <link sizes="76x76" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-76x76.png">
+        <link sizes="114x114" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-114x114.png">
+        <link sizes="120x120" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-120x120.png">
+        <link sizes="144x144" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-144x144.png">
+        <link sizes="152x152" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-152x152.png">
+        <link sizes="180x180" rel="apple-touch-icon" href="img/favicons/Apple-iOS/Favicon-180x180.png">
+        <!--Safari-->
+        <link color="#e52037" rel="mask-icon" href="img/favicons/Safari/Favicon.svg">
+        <!--Windows-->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/favicons/Windows/Favicon-140x140.png">
+        <meta name="msapplication-square70x70logo" content="img/favicons/Windows/Favicon-70x70.png">
+        <meta name="msapplication-square150x150logo" content="img/favicons/Windows/Favicon-150x150.png">
+        <meta name="msapplication-square310x310logo" content="img/favicons/Windows/Favicon-310x310.png">
+        <meta name="application-name" content="TEST NAME">
+        <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+
+        <!--GSAP connection-->
+        <script src="libs/gsap/gsap.min.js" defer></script>  
+        <script src="libs/gsap/ScrollTrigger.min.js" defer></script>   
+        <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+        <!--Bootstrap connection-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+        <!-- Bootstrap Icons CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/add.js" defer></script>
+    </head>
+
+    <body>
+      <!--Top Menu-->
+      <header class="fixed-top container-fluid container__header-menu">        
+        <nav class="row d-flex justify-content-between align-items-center header-menu">
+          <!--less lg open side menu button-->
+          <span class="d-block d-lg-none d-flex justify-content-start align-items-center col-2 h-100">
+            <button type="button" class="d-flex justify-content-center align-items-stretch p-0 button-menu button-menu-open" id="button-menu-open">
+              <i class="bi-list icon-menu"></i>
+            </button>
+          </span>
+          <!--more lg logo-->
+          <div class="col-4 col-lg-2 d-flex h-50 justify-content-center align-items-stretch">
+            <a class="d-flex align-items-center header-menu__logo" href="./index.html">
+              <h5>BINDER</h5>
+            </a>
+          </div>
+          <!--more lg navigation menu-->
+          <span class="d-block d-none d-lg-block col-8 h-50">
+            <div class="d-flex justify-content-around align-items-stretch">
+              <a class="header-menu__button-item button-item__on" href="./index.html">Главная</a>
+              <a class="header-menu__button-item button-item__off" href="./Works/index.html">Галлерея</a>
+              <a class="header-menu__button-item button-item__off" href="./Services/index.html">Услуги</a>
+              <a class="header-menu__button-item button-item__off" href="./Contacts/index.html">Контакты</a>
+            </div>              
+          </span>            
+          <!--more lg contacts menu-->     
+          <span class="d-block d-none d-lg-block col-2 h-50">
+            <div class="d-flex h-100 justify-content-between align-items-stretch">
+              <a class="d-flex justify-content-center align-items-center" href="tel:+995571199678" title="BINDER phone number" target="_blank" rel="noopener">
+                <i class="bi bi-telephone contact__icon"></i>
+              </a>
+              <a class="d-flex justify-content-center align-items-center" href="https://t.me/+995571199678" title="BINDER in Telegram" target="_blank" rel="noopener">
+                <i class="bi bi-telegram contact__icon"></i>
+              </a>
+              <a class="d-flex justify-content-center align-items-center" href="https://wa.me/89912364020?text=Здравствуйте, вас беспокоит клиент BINDER." title="BINDER in WhatsApp" target="_blank" rel="noopener">
+                <i class="bi bi-whatsapp contact__icon"></i>
+              </a>
+              <a class="d-flex justify-content-center align-items-center" href="mailto:89163313591@mail.ru&body=Здравствуйте, вас беспокоит клиент BINDER." title="BINDER mail" target="_blank" rel="noopener">
+                <i class="bi bi-envelope contact__icon"></i>
+              </a>
+            </div>                
+          </span>
+          <!--less lg contacts menu (mini)-->
+          <span class="d-block d-lg-none d-flex justify-content-end align-items-center col-2 h-100">
+            <div class="d-flex h-100 justify-content-end align-items-stretch">
+              <a class="d-flex justify-content-center align-items-center" href="tel:+995571199678" title="BINDER phone number" target="_blank" rel="noopener">
+                <i class="bi bi-telephone contact__icon"></i>
+              </a>
+            </div>               
+          </span>          
+          
+        </nav>
+      </header>
+
+      <!--less lg-->
+      <span class="d-block d-lg-none">
+        <!--side menu-->
+        <header class="fixed-top container-fluid container__left-menu">
+          <nav class="row">
+            <div class="d-flex flex-column justify-content-start align-items-start col-10 left-menu">
+              <!--заголовок-->
+              <h2 class="left-menu__header">Меню навигации</h2>
+              <!--navigation menu-->
+              <ul class="left-menu__buttons">
+                <li class="left-menu__item d-flex justify-content-start align-items-center">
+                  <a class="left-menu__button-item button-item__on" href="./index.html">Главная</a>
+                </li>
+                <li class="left-menu__item d-flex justify-content-start align-items-center">
+                  <a class="left-menu__button-item button-item__off" href="./Works/index.html">Галлерея</a>
+                </li>
+                <li class="left-menu__item d-flex justify-content-start align-items-center">
+                  <a class="left-menu__button-item button-item__off" href="./Services/index.html">Услуги</a>
+                </li>
+                <li class="left-menu__item d-flex justify-content-start align-items-center">
+                  <a class="left-menu__button-item button-item__off" href="./Contacts/index.html">Контакты</a>
+                </li>
+              </ul>
+            </div> 
+            <!--close side menu button-->
+            <div class="d-flex justify-content-start align-items-start col-2">
+              <button type="button" class="d-flex align-items-center justify-content-center p-0 button-menu button-menu-close" id="button-menu-close">
+                <i class="bi-list icon-menu icon-menu-2" id="icon-menu" style="display: block;"></i>
+                <i class="bi bi-x icon-close" id="icon-close" style="display: none;"></i>
+              </button>
+            </div>
+          </nav>
+        </header>
+      </span>
+      
+
+      <div class="wrapper">
+        <div class="content">        
+          <!--web site header-->
+          <header data-speed="0.7" class="container-fluid web-site-header" style="background-image: url(img/web-site-header/background.jpg);">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-10 d-flex flex-column justify-content-center align-items-center h-100 web-site-heade__text">
+                <h1 data-speed=".90" class="m-0 web-site-header__h1">Добро пожаловать в</h1>
+                <h2 data-speed=".86" class="web-site-header__h2">BINDER</h2>
+                <div data-speed=".80" class="d-flex justify-content-center align-items-center delimiter">
+                  <div class="d-flex align-items-center delimiter__line delimiter__line-left">
+                    <hr>
+                  </div>                 
+                  <i class="bi bi-asterisk delimiter__i"></i>
+                  <div class="d-flex align-items-center delimiter__line delimiter__line-right">
+                    <hr>
+                  </div>    
+                </div>            
+                <h6 data-speed=".76" class="web-site-header__p">Здесь рождается творчество</h6>
+              </div>
+            </div>
+          </header>
+
+          <!--web section #1-->
+          <section data-speed="1">
+            <!--content section #1--> 
+            <main class="container-fluid web-section-1">
+              <div class="row d-flex justify-content-center align-items-center h-100">                
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center h-100">
+                  <h1 class="m-0">Немного о компании</h1>
+                  <h3 class="m-0 header">BINDER</h3>
+                  <i class="bi bi-asterisk icon"></i>
+                  <p class="text">
+                    Компания BINDER предлагает услуги по ремонту и отделке квартир. Выполняем все виды отделочных работ: штукатурные работы, шпаклевка, обои, 
+                    покраска, плитка, гипсокартон, ламинат и многое другое. Работаем как с частными так и с юридическими лицами. За время работы компании 
+                    мы выполнили огромное количество разных объектов. На все выполненные работы дается гарантия. Вы можете быть уверены в качестве наших 
+                    услуг. Для нас важен каждый клиент. Мы рады каждому клиенту. Будем рады если вы обратитесь в нашу компанию.
+                  </p>
+                </div>
+              </div>                            
+            </main>
+          </section>
+
+          <!--web section #2-->
+          <section data-speed="1">
+            <!--header section #2--> 
+            <header data-speed="0.7" class="container-fluid d-flex justify-content-center align-items-center section-2__header" style="background-image: url(img/web-site-header/Works-background.jpg);">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div data-speed="1" class="col-10 d-flex flex-column justify-content-center align-items-center h-100 section-2__header__text">
+                  <h1 class="m-0">Галлерея</h1>
+                  <h5>BINDER</h5>
+                </div>
+              </div>
+            </header>
+            <!--content section #2--> 
+            <main class="container-fluid">
+              <div class="row">                
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                  <h1 class="m-0">Работы</h1>
+                  <h5 class="header">BINDER</h5>
+                  <i class="bi bi-asterisk icon"></i>
+                  <p class="text">
+                    Команда BINDER старается создать непросто красивый интерьер, а удобный для каждого клиента. Наша цель – это комфортное проживание в квартире, доме или офисе. Поэтому 
+                    мы делаем все возможное для того, чтобы наш клиент был доволен, и получил именно то, что он хотел. При этом мы учитываем пожелания и вкусы заказчика. Мы с радостью 
+                    выслушаем все ваши предложения и пожелания, а также поможем оформить дизайн проект. Вы можете быть уверены, что мы сделаем все, чтобы ваш интерьер стал именно таким, 
+                    каким вы его хотите видеть. Наши специалисты помогут вам создать уют в вашем доме.
+                  </p>
+                  <a class="header-menu__button-item button-item__on" href="./Works/index.html">Галлерея работ</a>
+                </div>
+                <div class="col-12 col-lg-6 slider">
+                  <div id="carouselExampleControls__Gallery-of-works" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleControls__Gallery-of-works" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleControls__Gallery-of-works" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleControls__Gallery-of-works" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleControls__Gallery-of-works" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleControls__Gallery-of-works" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleControls__Gallery-of-works" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Gallery-of-works/1.jpg" class="d-block w-100" alt="Gallery-of-work-1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Gallery-of-works/2.jpg" class="d-block w-100" alt="Gallery-of-work-2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Gallery-of-works/3.jpg" class="d-block w-100" alt="Gallery-of-work-3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Gallery-of-works/4.jpeg" class="d-block w-100" alt="Gallery-of-work-4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Gallery-of-works/5.jpeg" class="d-block w-100" alt="Gallery-of-work-5">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Gallery-of-works/6.jpg" class="d-block w-100" alt="Gallery-of-work-6">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls__Gallery-of-works"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.43); border-radius: calc(var(--index) * 0.2);"></span>
+                      <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls__Gallery-of-works"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.43); border-radius: calc(var(--index) * 0.2);"></span>
+                      <span class="visually-hidden">Следующий</span>
+                    </button>
+                  </div>
+                </div>
+              </div>                            
+            </main>           
+          </section>
+          
+          <!--web section #3-->
+          <section data-speed="1">
+            <!--header section #3--> 
+            <header data-speed="0.7" class="container-fluid d-flex justify-content-center align-items-center section-3__header" style="background-image: url(img/web-site-header/Services-background.jpg);">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div data-speed="1" class="col-10 d-flex flex-column justify-content-center align-items-center h-100 section-3__header__text">
+                  <h1 class="m-0">Услуги</h1>
+                  <h3>BINDER</h3>
+                </div>
+              </div>
+            </header>
+            <!--content section #3--> 
+            <main class="container-fluid">
+              <div class="row">                
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                  <h1 class="m-0">Услуги</h1>
+                  <h5 class="header">BINDER</h5>
+                  <i class="bi bi-asterisk icon"></i>
+                  <p class="text">
+                    BINDER предоставляет большой спектр услуг по ремонту и отделки недвижимости. Мы работаем как с физическими, так и с юридическими лицами. В своей работе 
+                    мы используем только качественные материалы от проверенных поставщиков. Наши специалисты имеют огромный опыт в ремонте и отделке. С нами Вам не придется 
+                    тратить время на поиск нужных материалов. Все необходимые материалы вы можете заказать у нас. Специалисты помогут Вам определиться с выбором.
+                  </p>
+                  <a class="header-menu__button-item button-item__on" href="./Services/index.html">Услуги</a>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                  <img src="img/Services.jpg" alt="Repair-Work" style="max-height: 95%; max-width: 95%;">
+                </div>
+              </div>                            
+            </main>           
+          </section>
+
+          <footer class="container-fluid container__footer">        
+            <div class="row d-flex align-items-center justify-content-center h-75 container__footer__contacts">
+              <div class="col-6 d-flex align-items-center justify-content-around">
+                <a class="d-flex justify-content-center align-items-center" href="tel:+995571199678" title="BINDER phone number" target="_blank" rel="noopener">
+                  <i class="bi bi-telephone contact__icon"></i>
+                </a>
+                <a class="d-flex justify-content-center align-items-center" href="https://t.me/+995571199678" title="BINDER in Telegram" target="_blank" rel="noopener">
+                  <i class="bi bi-telegram contact__icon"></i>
+                </a>
+                <a class="d-flex justify-content-center align-items-center" href="https://wa.me/89912364020?text=Здравствуйте, вас беспокоит клиент BINDER." title="BINDER in WhatsApp" target="_blank" rel="noopener">
+                  <i class="bi bi-whatsapp contact__icon"></i>
+                </a>
+                <a class="d-flex justify-content-center align-items-center" href="mailto:89163313591@mail.ru&body=Здравствуйте, вас беспокоит клиент BINDER." title="BINDER mail" target="_blank" rel="noopener">
+                  <i class="bi bi-envelope contact__icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center h-25 container__footer__content">
+              <div class="col-6 d-flex align-items-center justify-content-around container__footer__text">Made by paws</div>
+            </div>
+          </footer>
+
+        </div>
+      </div>     
+    </body>
+</html>
